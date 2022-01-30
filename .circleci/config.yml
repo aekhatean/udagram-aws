@@ -22,10 +22,10 @@ jobs:
           command: |
             npm run set-node-options
       - run:
-          name: Front-End Build
-          command: |
-            npm run frontend:build
-      - run:
           name: Back-End Build
           command: |
             npm run backend:build
+      - run:
+          name: Front-End Build
+          command: |
+            npm run frontend:build
