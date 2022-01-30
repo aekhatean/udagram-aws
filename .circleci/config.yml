@@ -2,7 +2,7 @@ version: 2.1
 orbs:
   node: circleci/node@4.7
   aws-cli: circleci/aws-cli@2.0.6
-  angular-npm-orb: code0987/angular-npm-orb@0.1.0
+  eb: circleci/aws-elastic-beanstalk@1.0.0
 jobs:
   build:
     docker:
@@ -30,3 +30,11 @@ jobs:
           name: Front-End Build
           command: |
             npm run frontend:build
+      - run:
+          name: Back-End Deploy
+          command: |
+            npm run backend:deploy
+      - run:
+          name: Front-End Deploy
+          command: |
+            npm run frontend:deploy
