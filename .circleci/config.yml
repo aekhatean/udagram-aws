@@ -2,6 +2,7 @@ version: 2.1
 orbs:
   node: circleci/node@4.7
   aws-cli: circleci/aws-cli@2.0.6
+  angular-npm-orb: code0987/angular-npm-orb@0.1.0
 jobs:
   build:
     docker:

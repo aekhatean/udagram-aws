@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "frontend:install": "cd udagram-frontend && npm install && npm install -g @angular/cli",
+    "frontend:install": "cd udagram-frontend && npm install",
     "backend:install": "cd udagram-api && npm install",
     "set-node-options": "export NODE_OPTIONS=--openssl-legacy-provider",
     "frontend:build": "cd udagram-frontend && npm run build",
