@@ -2,7 +2,7 @@
 
 This application is fullstack app using Angular for the client-side and Express.js for node backend. The udagram application is a fairly simple application that includes all the major components of a Full-Stack web application.
 
-You can try this app through this [url](udagram-api-bucket.s3-website-us-east-1.amazonaws.com).
+You can try this app through this [url](http://udagram-api-bucket.s3-website-us-east-1.amazonaws.com).
 
 ## Getting Started
 
@@ -115,12 +115,16 @@ Our pipline runs like the following steps
 6. Setup aws-cli with circleci environment variables, like in the following image:
    ![circleci environment variables](/images/circleci-environment-variables.png "circleci environment variables")
 7. Then it starts the workflow:
+   ![circleci pipeline diagram](images/deployment%20pipeling-diagram.drawio.png "circleci pipeline diagram")
    1. Install frontend dependencies
    2. Install backend dependencies
    3. Build the backend
    4. Build the frontend
-   5. Deploy the backend
-   6. Deploy the frontend
+   5. install pip
+   6. Install AWS and EB dependencies
+   7. Deploy the backend
+   8. Deploy the frontend
+      ![circleci pipeline success](images/circleci-success.png "circleci pipeline success")
 
 ## License
 
