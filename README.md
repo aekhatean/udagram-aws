@@ -87,13 +87,13 @@ The e2e tests are using Protractor and Jasmine.
 For this project, we used multible AWS services, including
 
 1. Web server `Elastic Beanstak (EB)`: easy-to-use service for deploying and scaling web applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS.
-   ![Elastic Beanstak](/images/eb-health-status.png "Elastic Beanstak health status")
+   ![Elastic Beanstak](images/eb-health-status.png "Elastic Beanstak health status")
 
 2. Web hosting `Simple Storage Services (S3)`: an object storage service that offers industry-leading scalability, data availability, security, and performance. Customers of all sizes and industries can use Amazon S3 to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile applications, etc.
-   ![Simple Storage Services](/images/s3-accessibility.png "Simple Storage Services availibility")
+   ![Simple Storage Services](images/s3-accessibility.png "Simple Storage Services availibility")
 
 3. Database `Relational Database Service (RDS)`: makes it easy to set up, operate, and scale a relational database in the cloud.
-   ![Relational Database Service](/images/rds-availibility.png "Relational Database Service availibility")
+   ![Relational Database Service](images/rds-availibility.png "Relational Database Service availibility")
 
 ### Infrastructure diagram
 
@@ -102,7 +102,7 @@ The following diagram illustrates how frontend and backend communicate through a
 ## Pipeline process
 
 Our pipline runs like the following steps
-![infrastructure diagram](/images/udagram-diagram-redone.png "infrastructure diagram")
+![infrastructure diagram](images/udagram-diagram-redone.png "infrastructure diagram")
 
 1. Add a feature or fix a bug
 2. Gets pushed/merged to `main` branch
@@ -113,7 +113,7 @@ Our pipline runs like the following steps
    3. `eb: circleci/aws-elastic-beanstalk@1.0.0`
 5. Then it installs node.js in the environmet
 6. Setup aws-cli with circleci environment variables, like in the following image:
-   ![circleci environment variables](/images/circleci-environment-variables.png "circleci environment variables")
+   ![circleci environment variables](images/circleci-environment-variables.png "circleci environment variables")
 7. Then it starts the workflow:
    ![circleci pipeline diagram](images/deployment%20pipeling-diagram.drawio.png "circleci pipeline diagram")
    1. Install frontend dependencies
